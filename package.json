@@ -1,0 +1,46 @@
+{
+  "name": "pubsub-poc",
+  "version": "1.0.0",
+  "description": "pub/sub messager mechanism poc to comunicate containsers in the FE",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "babel modules --out-dir lib",
+    "watch": "babel modules --out-dir lib -w",
+    "browserify-messages": "browserify lib/messages-handler.js  -o public/messages-handler.js",
+    "browserify-main": "browserify lib/main/main.js  -o public/main.js",
+    "browserify-vertical-1": "browserify lib/vertical-1/vertical-1.js  -o public/vertical-1.js",
+    "browserify-vertical-2": "browserify lib/vertical-2/vertical-2.js  -o public/vertical-2.js",
+    "browserify-vertical-3": "browserify lib/vertical-3/vertical-3.js  -o public/vertical-3.js",
+    "browserify-vertical-4": "browserify lib/vertical-4/vertical-4.js  -o public/vertical-4.js",
+    "build" : "npm start && npm run browserify-messages && npm run browserify-main && npm run browserify-vertical-1 && npm run browserify-vertical-2 && npm run browserify-vertical-3 && npm run browserify-vertical-4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdr0/pubSub-poc.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Pedro Selas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pdr0/pubSub-poc/issues"
+  },
+  "homepage": "https://github.com/pdr0/pubSub-poc#readme",
+  "dependencies": {
+    "pubsub-js": "^1.7.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-preset-latest": "^6.24.1",
+    "browserify": "^16.5.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}
