@@ -1,6 +1,6 @@
 import topics from '../topics'
 
-const onMessage = (msg, data) => console.log(msg, data);
+const onMessage = (msg, data) => console.log(`TOPIC: ${msg} - payload: ${data}`);
 
 window.messages.publishSync(topics['lotto.main.header.expanded'], true);
 
@@ -12,11 +12,10 @@ window.messages.subscribe(topics['lotto.container-4.click'], onMessage);
 
 const container = document.querySelector('header');
 container.addEventListener('click', evt => {
-    console.log(`Main: I've been clicked `);
     window.messages.publishSync(topics["lotto.main.header.expanded"], true)
 });
 
-window.messages.publishSync(topics["lotto.container-1.loaded"], true);
+window.messages.publishSync(topics['lotto.main.loaded'], true);
 
 
 

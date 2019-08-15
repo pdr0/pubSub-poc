@@ -1,6 +1,6 @@
 import topics from '../topics'
 
-const onMessage = (msg, data) => console.log(msg, data);
+const onMessage = (msg, data) => console.log(`TOPIC: ${msg} - payload: ${data}`);
 
 const container = document.querySelector('#vertical-3');
 container.addEventListener('click', evt => {
