@@ -1,11 +1,18 @@
 import topics from '../topics'
 
-const onMessage = (msg, data) => console.log(`TOPIC: ${msg} - payload: ${data}`);
-
 const container = document.querySelector('#vertical-2');
+const onMessage = (msg, data) => {
+    console.log(`TOPIC: ${msg} - payload: ${data}`);
+    if (msg === topics["lotto.main.login.click"]) {
+        container.className = '';
+        container.classList.add('on-login');
+    }
+};
+
+
 container.addEventListener('click', evt => {
-    console.log(`V2: I've been clicked `);
     window.messages.publishSync(topics["lotto.container-2.click"], true)
 });
 
 window.messages.subscribe(topics["lotto.container-1.click"], onMessage);
+window.messages.subscribe(topics["lotto.main.login.click"], onMessage);

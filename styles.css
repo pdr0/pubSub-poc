@@ -40,3 +40,37 @@ header{
     background-color: cadetblue;
 }
 
+#vertical-1.on-search, #vertical-2.on-search, #vertical-3.on-search, #vertical-4.on-search {
+    background-color: #ad1d13;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
+#vertical-1.on-login, #vertical-2.on-login, #vertical-3.on-login, #vertical-4.on-login{
+    background-color: #a6ad41;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
+#vertical-1.on-help, #vertical-2.on-help, #vertical-3.on-help, #vertical-4.on-help{
+    background-color: #3fad91;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
+#vertical-1.on-payment,#vertical-2.on-payment,#vertical-3.on-payment,#vertical-4.on-payment{
+    background-color: #71ad10;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
+#vertical-1.on-lotto,#vertical-2.on-lotto,#vertical-3.on-lotto,#vertical-4.on-lotto{
+    background-color: #ad337f;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
