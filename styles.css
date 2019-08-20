@@ -48,14 +48,14 @@ header{
 }
 
 #vertical-1.on-login, #vertical-2.on-login, #vertical-3.on-login, #vertical-4.on-login{
-    background-color: #a6ad41;
+    background-color: #fff300;
     -webkit-transition: background-color 500ms linear;
     -ms-transition: background-color 1000ms linear;
     transition: background-color 1000ms linear;
 }
 
 #vertical-1.on-help, #vertical-2.on-help, #vertical-3.on-help, #vertical-4.on-help{
-    background-color: #3fad91;
+    background-color: #5dffdc;
     -webkit-transition: background-color 500ms linear;
     -ms-transition: background-color 1000ms linear;
     transition: background-color 1000ms linear;
